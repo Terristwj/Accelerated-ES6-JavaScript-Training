@@ -1,21 +1,13 @@
 # My Practices
 > <h1>Section 2</h1>
 ---
-<h3 style="text-align: center;">
-    <b>(1) let / var / const</b>
-</h3>
-
+### **(1) let / var / const**
 - 'let' scope is within a code block
 - 'var' scope is within a function
 - 'const' is immutable
     - Object and array const can be modified but not reassigned
 
-<br>
-
-<h2 style="text-align: center;">
-    <b>(2) Fat arrow</b>
-</h2>
-
+### **(2) Fat arrow**
 - Function
     <pre><code>var fn1 = () => {
       console.log("Hello!");
