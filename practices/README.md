@@ -1,5 +1,9 @@
 # My Practices
-> <h1>Section 2</h1>
+> | Sec_2(#heading-ids) | Sec_3 | Sec_4 |Sec_5 |
+> | -- | -- | -- | -- |
+<br>
+
+> <h1>Section 2{#heading-ids}</h1>
 ---
 ### **(1) let / var / const**
 - 'let' scope is within a code block
@@ -49,13 +53,111 @@
       return num1 === num2;
   }
 </code></pre>
+
+### **(3) Object literal**
+- Objects can be assigned to another object
+
+Code:
+<pre><code>let age_data = ["age", 25];
+let gender = "female";
+let person = {
+    name: 'Anna',
+    [age_data[0]]: age_data[1],
+    gender,
+    "Greet me"() {
+        return "Hello! My name is " + this.name + "."
+                + "\nI am " + this[age_data[0]] + " years old!"
+                + "\nI'm a " + this["gender"];
+    }
+};
+console.log(person);
+console.log(person["Greet me"]());</code></pre>
+Output:
+<pre><code>{
+  name: 'Anna',
+  age: 25,
+  gender: 'female',
+  'Greet me': [Function: Greet me]
+}
+Hello! My name is Anna.
+I am 25 years old!
+I'm a female</code></pre>
+
+### **(4) Rest vs Spread**
+- Rest operator - Auto creates an array
+    <pre><code>function sumUp(...toAdd){
+      //OUT: [ 1, 2, 3, 4, 5 ]
+      console.log(toAdd);
+      let result = 0;
+      for (let i = 0; i < toAdd.length; i++)
+          result += toAdd[i];
+      return result;
+  }
+  //OUT: 15
+  console.log(sumUp(1,2,3,4,5));</code></pre>
+- Spread operator - Auto splits an array
+    <pre><code>let numbers = [1,2,3,4,5]
+  //OUT: 1 2 3 4 5
+  console.log(...numbers);
+  //OUT: 5
+  console.log(Math.max(...numbers));</code></pre>
+
+### **(5) for-of loop**
+Code:
+<pre><code>numbers = [1.5, 1.7, 1.8]
+for (let num of numbers){
+    console.log(num);
+}</code></pre>
+Output:
+<pre><code>1.5
+1.7
+1.8</code></pre>
+
+### **(6) Template literals**
+Code:
+<pre><code>let count = 3;
+let description1 = `
+    ${count} apples
+`;
+let description2 = "${count} apples";
+
+console.log(description1);
+console.log(description2);</code></pre>
+Output:
+<pre><code>
+    3 apples
+
+ ${count} apples</code></pre>
+
+### **(7) Destructuring array - By index**
+<pre><code>let key = 3
+numbers = [1,2,`${key}`];
+let [n1, n2] = numbers;
+let [no1='Def', no2, no3, no4, no5='Def'] = numbers;
+let [num1, ...num2] = numbers;
+
+console.log(numbers)                    //OUT: [ 1, 2, '3' ]
+console.log(n1, n2)                     //OUT: 1 2
+console.log(no1, no2, no3, no4, no5)    //OUT: 1 2 3 undefined Def
+console.log(num1, num2)                 //OUT: 1 [ 2, '3' ]
+
+let [a, b, c] = [1, 5, 9];
+[c, , a] = [a, b, c];
+console.log(a,b,c);                     //OUT: 9 5 1</code></pre>
+
+### **(8) Destructuring object - By key**
+<pre><code>person = {
+    name: 'Anne',
+    age: '25',
+    // greet() {console.log("Hello")} //Also works
+    greet: () => console.log("Hello")
+};
+
+let {greet: hello, name: callMe, age} = person;
+hello();                                //OUT: Hello
+console.log(`${callMe} is ${age}`);     //OUT: Anne is 25</code></pre>
+
 <br>
 
-
-
-
-| <h2>**Description**</h2> |
-| --------------- |
-| **​Learn modern JavaScript!** <br> Knowing modern JavaScript, ES6 (ECMAScript 6), is extremely important in the world of JavaScript! ES6 adds tons of new features, methods, objects and helpers and the earlier you feel confident using them, the better! <br><br> JavaScript is the most important programming language in the web and it's constantly evolving. This course introduces you to the biggest "feature update" in the last couple of years: ES6 - which added a lot of new syntax features and improvements. |
-| **Get the "All-In-One" package today!** <br> This course follows a hands-on, example-driven approach to show and explain all the important features added to JavaScript. This includes important **syntax changes** and additions like **let**, **const**, rest & spread operators and continues with **Promises**, the **Reflect API**, the **Proxy API**, **Maps** & **Sets**, tons of **new methods and functions** and **much more**! <br><br> At the end of the course, we'll even **build a complete project**, using many of the new Features shown throughout the Course! |
-| **Benefit from my knowledge as both a freelance web developer and a top-rated instructor with many years of experience.** <br><br>As a freelance web developer, using JavaScript is my **day-to-day work** and therefore I always found it annoying the ES6 Resources are scattered out all over the web. **I created this Course to share my knowledge on ES6 with you!** |
+> <h1>Section 3</h1>
+---

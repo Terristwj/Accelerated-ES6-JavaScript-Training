@@ -83,7 +83,7 @@ console.log(def_param_2());
 
 
 
-// (3) Object Literal
+// (3) Object literal
 let obj_1 = {
     obj_name: "Bob",
     obj_age: 26
@@ -139,7 +139,7 @@ console.log(sumUp(1,2,3,4,5));
 
 // Spread operator - Auto splits an array
 let numbers = [1,2,3,4,5]
-// console.log(...numbers);
+console.log(...numbers);
 console.log(Math.max(...numbers));
 
 // (5) for-of loop
