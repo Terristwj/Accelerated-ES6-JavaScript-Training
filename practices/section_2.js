@@ -147,3 +147,40 @@ numbers = [1.5, 1.7, 1.8]
 for (let num of numbers){
     console.log(num);
 }
+
+// (6) Template literals
+let count = 3;
+let description1 = `
+    ${count} apples
+`;
+let description2 = "${count} apples";
+console.log(description1);
+console.log(description2);
+
+// (7) Destructuring array - By index
+let key = 3
+numbers = [1,2,`${key}`];
+let [n1, n2] = numbers;
+let [no1='Def', no2, no3, no4, no5='Def'] = numbers;
+let [num1, ...num2] = numbers;
+console.log(numbers)
+console.log(n1, n2)
+console.log(no1, no2, no3, no4, no5)
+console.log(num1, num2)
+
+let [a, b, c] = [1, 5, 9];
+[c, , a] = [a, b, c];
+console.log(a,b,c);
+
+
+// (8) Destructuring object - By key
+person = {
+    name: 'Anne',
+    age: '25',
+    // greet() {console.log("Hello")} //Also works
+    greet: () => console.log("Hello")
+};
+
+let {greet: hello, name: callMe, age} = person;
+hello();
+console.log(`${callMe} is ${age}`);
