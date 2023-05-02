@@ -1,9 +1,9 @@
 # My Practices
-> Section 2
+> <h1>Section 2</h1>
 ---
-<h2 style="text-align: center;">
+<h3 style="text-align: center;">
     <b>(1) let / var / const</b>
-</h2>
+</h3>
 
 - 'let' scope is within a code block
 - 'var' scope is within a function
