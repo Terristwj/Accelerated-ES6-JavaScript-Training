@@ -1,9 +1,6 @@
 # Accelerated ES6 JavaScript Training
 > Udemy Paid Course
 ---
-
-<br>
-
 ## **Who this course is for:**
 - Students who have experience with "current-generation" JavaScript (ES5) and know the basics of the language
 - Students also taking my JavaScript Bootcamp course to have a nice follow-up on it
