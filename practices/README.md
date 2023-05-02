@@ -17,21 +17,50 @@
 </h2>
 
 - Function
-    - `var fn1 = () => {console.log("Hello!");}`
-    - `var fn2 = () => console.log("Bye!");`
+    <pre><code>var fn1 = () => {
+      console.log("Hello!");
+  };
+  var fn2 = () => console.log("Bye!");</code></pre>
 - Function w/ return
-    - `var fn1 = () => {return "Hello!";};`
-    - `var fn2 = () => "Bye!";`
+    <pre><code>var fn1 = () => {
+      return "Hello!";
+  };
+  var fn2 = () => "Bye!";</code></pre>
 - Function w/ parameters
-    - `var fn1 = (a,b) => {a + b + 3;};`
-    - `var fn2 = (a,b) => a + b + 3;`
-    - `var fn3 = a => a + 3;`
+    <pre><code>var fn1 = (a,b) => {
+      a + b + 3;
+  };
+  var fn2 = (a,b) => a + b + 3;
+  var fn3 = a => a + 3;</code></pre>
 - setTimeout
-    - `setTimeout( 
-        ()=>console.log("Waited 5 sec")
-        , 5000);`
+    <pre><code>setTimeout( 
+      ()=>console.log("Waited 5 sec")
+      , 5000);</code></pre>
+- Fat arrow - 'this'
+    <pre><code>//'this' refers to the variable
+  var fn_this_1 = () => console.log(this); 
 
+  //'this' refers to the caller. E.g.Button
+  function fn_this_2() {
+      console.log(this);
+  }</code></pre>
+- Functions w/ default paramaters
+    <pre><code>// Pass
+  function def_param_1(num1, num2 = num1) {
+      console.log(num1, num2);
+      return num1 === num2;
+  }
+
+  // Error - param reads line by line
+  function def_param_2(num1 = num2, num2 = 10){
+      console.log(num1, num2);
+      return num1 === num2;
+  }
+</code></pre>
 <br>
+
+
+
 
 | <h2>**Description**</h2> |
 | --------------- |
