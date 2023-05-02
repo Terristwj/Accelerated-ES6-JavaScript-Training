@@ -1,9 +1,9 @@
-# My Practices
+# <a id='top'>My Practices</a>
 > | <a href='#2'>Sec_2</a> | <a href='#3'>Sec_3</a> | <a href='#5'>Sec_4</a> |<a href='#4'>Sec_5</a> |
 > | -- | -- | -- | -- |
 <br>
 
-> <h1 id='2'>Section 2</h1>
+> <h1 id='2'><a href='#top'>Section 2</a></h1>
 ---
 ### **(1) let / var / const**
 - 'let' scope is within a code block
@@ -159,5 +159,5 @@ console.log(`${callMe} is ${age}`);     //OUT: Anne is 25</code></pre>
 
 <br>
 
-> <h1 id='3'>Section 3</h1>
+> <h1 id='3'><a href='#top'>Section 3</a></h1>
 ---
