@@ -54,7 +54,8 @@
   }
 </code></pre>
 
-### **(3) Object literal**
+### <a id='s2_3'>**(3) Object literal**</a>
+- Creating objects without using a class (<a href='#s3_3'>Section_3 (3)</a>)
 - Objects can be assigned to another object
 
 Code:
@@ -172,8 +173,18 @@ console.log(`${callMe} is ${age}`);     //OUT: Anne is 25</code></pre>
 - Modules are **Importing references to a file**
   - It does not make acopy of the values
 
-### **(1) Import & Export syntax**
+### **(2) Import & Export syntax**
 - Basic import -> **import {keyVal as val} from ".script.js";**
 - Default import -> **import ab from "...";**
   - Any import name
 - \* import -> **import * as myObj from "...";**
+
+### <a id='s3_3'>**(3) Classes**</a>
+- Different from object literals (<a href='#s2_3'>Section_2 (3)</a>)
+- Contains only
+  1. constuctor(name)
+     - this.name = name 
+  2. functions. E.g. greet()
+  
+| class Person | let myPer = new Person() |
+| :----------: | :----------------------: |

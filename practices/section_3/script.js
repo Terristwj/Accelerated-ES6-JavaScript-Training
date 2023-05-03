@@ -29,3 +29,18 @@ import a, {myVal as val} from './external.js';
 import * as example from './external.js';
 console.log(example);
 
+
+// (3) Class - Different from section_2_(3)
+class Person {
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    greet(){
+        console.log(`My name is ${this.name}.`);
+    }
+}
+let adam = new Person("adam", 13);
+console.log(adam);
+adam.greet();
+
