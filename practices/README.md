@@ -186,5 +186,5 @@ console.log(`${callMe} is ${age}`);     //OUT: Anne is 25</code></pre>
      - this.name = name 
   2. functions. E.g. greet()
   
-| class Person | let myPer = new Person() |
-| :----------: | :----------------------: |
+| class Person {...} | let myPer = new Person() |
+| :----------------: | :----------------------: |
