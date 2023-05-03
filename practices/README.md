@@ -9,7 +9,7 @@
 - 'let' scope is within a code block
 - 'var' scope is within a function
 - 'const' is immutable
-    - Object and array const can be modified but not reassigned
+  - Object and array const can be modified but not reassigned
 
 ### **(2) Fat arrow**
 - Function
@@ -161,3 +161,19 @@ console.log(`${callMe} is ${age}`);     //OUT: Anne is 25</code></pre>
 
 > <h1 id='3'><a href='#top'>Section 3</a></h1>
 ---
+### **(1) Modules basic**
+- Prerequisites: Any module loader
+  - Node.js (Install latest ver)
+    - cd \<project folder>
+    - node -v
+    - npm init - Enter settings
+    - Locate package.json
+      - Add { "type": "module" }
+- Modules are **Importing references to a file**
+  - It does not make acopy of the values
+
+### **(1) Import & Export syntax**
+- Basic import -> **import {keyVal as val} from ".script.js";**
+- Default import -> **import ab from "...";**
+  - Any import name
+- \* import -> **import * as myObj from "...";**

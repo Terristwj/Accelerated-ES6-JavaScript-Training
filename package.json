@@ -1,0 +1,12 @@
+{
+  "name": "accelerated-es6-javascript-training",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
