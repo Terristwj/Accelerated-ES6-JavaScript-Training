@@ -81,3 +81,13 @@ class Student extends Person{
 let thomas = new Student("Thomas", 15, "App jc");
 console.log(thomas);
 thomas.greetTwice();
+
+// (3) Class - Static function
+class Helper {
+    static logout() {
+        console.log("logout");
+    }
+}
+// No need to write:
+// let helper = new Helper();
+Helper.logout();
