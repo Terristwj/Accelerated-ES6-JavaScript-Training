@@ -188,9 +188,16 @@ console.log(`${callMe} is ${age}`);     //OUT: Anne is 25</code></pre>
   
 | class Person {...} | let myPer = new Person() |
 | :----------------: | :----------------------: |
-- Prototype
+#### **Prototype**
   - Used to edit the class
     - Add attribute
     - Add function
   - myObj.\_\_proto__
     - View the prototype attributes
+#### **Inheritance**
+  - class Student extends Person {...}
+    - Copies Person constructor if no constructor
+    - Must add super() inside own constructor
+  - Creating functions
+    - 'this' refers to current/parent function
+    - 'super' refers to parent function

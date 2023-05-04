@@ -37,12 +37,13 @@ class Person {
         this.age = age;
     }
     greet(){
-        console.log(`My name is ${this.name}.\n`);
+        console.log(`My name is ${this.name}`);
     }
 }
 let adam = new Person("adam", 13);
 console.log(adam);
 adam.greet();
+console.log();
 
 // (3) Class - Prototype
 Person.prototype.species = "human";
@@ -56,3 +57,27 @@ console.log(adam.species);
 console.log(adam.sayHello);
 adam.sayHello();
 console.log(adam.__proto__);
+console.log();
+
+// (3) Class - Inheritance
+class Student extends Person{
+    // Having a constuctor must include super()
+    constructor(name, age, school){
+        super(name, age);
+        this.school = school;
+    }
+
+    greet(){
+        console.log("Hello");
+    }
+
+    greetTwice(){
+        // If there is no greet() in the class,
+        // 'this' will refer to parent greet()
+        this.greet();
+        super.greet();
+    }
+}
+let thomas = new Student("Thomas", 15, "App jc");
+console.log(thomas);
+thomas.greetTwice();
