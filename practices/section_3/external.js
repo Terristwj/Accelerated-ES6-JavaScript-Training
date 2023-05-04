@@ -17,3 +17,11 @@ export {myVal, test};
 let ab = "Something";
 export default ab;      
 // Only one default export per file
+
+
+// (3) Export classes
+export class myObj{
+    constructor(){
+        this.something = "something";
+    }
+}
