@@ -188,3 +188,9 @@ console.log(`${callMe} is ${age}`);     //OUT: Anne is 25</code></pre>
   
 | class Person {...} | let myPer = new Person() |
 | :----------------: | :----------------------: |
+- Prototype
+  - Used to edit the class
+    - Add attribute
+    - Add function
+  - myObj.\_\_proto__
+    - View the prototype attributes

@@ -37,10 +37,22 @@ class Person {
         this.age = age;
     }
     greet(){
-        console.log(`My name is ${this.name}.`);
+        console.log(`My name is ${this.name}.\n`);
     }
 }
 let adam = new Person("adam", 13);
 console.log(adam);
 adam.greet();
 
+// (3) Class - Prototype
+Person.prototype.species = "human";
+Person.prototype.sayHello = function hello() {
+    console.log("Hello")
+};
+console.log(adam);  // Does not display prototype
+console.log(adam.species);
+// Calls sayHello attribute, 
+// that points to hello function
+console.log(adam.sayHello);
+adam.sayHello();
+console.log(adam.__proto__);
