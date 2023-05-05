@@ -1,6 +1,10 @@
 # <a id='top'>My Practices</a>
-> | <a href='#2'>Sec_2</a> | <a href='#3'>Sec_3</a> | <a href='#5'>Sec_4</a> |<a href='#4'>Sec_5</a> |
-> | -- | -- | -- | -- |
+### Prerequisites:
+- Install 'Code Runner' extension to run code by selection
+<br><br>
+### Navigation
+> | <a href='#2'>Sec_2</a> | <a href='#3'>Sec_3</a> |
+> | -- | -- |
 <br>
 
 > <h1 id='2'><a href='#top'>Section 2</a></h1>
