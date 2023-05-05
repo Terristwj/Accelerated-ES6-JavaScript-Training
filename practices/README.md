@@ -1,5 +1,7 @@
 # <a id='top'>My Practices</a>
 ### Prerequisites:
+- Initialize package.json
+  - npm init
 - Install 'Code Runner' extension to run code by selection
 <br><br>
 ### Navigation
